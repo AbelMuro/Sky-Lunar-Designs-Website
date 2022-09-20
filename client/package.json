@@ -2,7 +2,6 @@
   "name": "skylunardesignswebsite",
   "version": "1.0.0",
   "description": "",
-  "proxy": "http://localhost:1234",
   "source": "./src/index.html",
   "scripts": {
     "start": "parcel",
