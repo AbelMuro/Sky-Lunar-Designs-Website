@@ -1,7 +1,6 @@
 {
   "name": "skylunardesignswebsite",
   "version": "1.0.0",
-  "proxy": "http://localhost:5000",
   "description": "",
   "source": "./src/index.html",
   "scripts": {
