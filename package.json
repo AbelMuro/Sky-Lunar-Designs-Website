@@ -14,12 +14,10 @@
     "staticPath": "./src/assets"
   },
   "dependencies": {
-    "jquery": "^3.6.1"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "http-proxy-middleware": "^2.0.6",
     "parcel": "^2.7.0",
-    "parcel-reporter-static-files-copy": "^1.4.0",
-    "uuid": "^8.3.2"
+    "parcel-reporter-static-files-copy": "^1.4.0"
   }
 }
