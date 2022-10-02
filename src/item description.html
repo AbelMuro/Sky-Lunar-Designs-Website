@@ -41,11 +41,12 @@
                 let size_array = temporary[0].item_sizes.split(" ");
 
                 // (2) getting the data from the item and storing that data into elements in the DOM
-                $("#item_image").attr("src",storedImage);
+                $("#item_image").attr("src", storedImage);
                 $("#item_title").html(storedTitle);
                 $("#item_price").html("$" + storedPrice).attr("data-price", storedPrice.toString());
-                $("#description").html(storedDesc);        
-
+                $("#description").append("<div class='descTitle'> Description: </div>");                   
+                $("#description").append(storedDesc);   
+  
                 // (3) using a 'for' loop to traverse the data from the item and storing that data into <img> elements 
                 // and <option> elements and finally we append those elements into the DOM
                 for(let key in variant_array) {
@@ -130,7 +131,8 @@
                     <button id="add_to_cart" onclick="add_to_cart($('#item_description'))"> Add To Cart </button>
                 </a>
             </div>    
-            <p id="description"> </p>
+            <p id="description"> 
+            </p>
         </section>
 
         <footer>

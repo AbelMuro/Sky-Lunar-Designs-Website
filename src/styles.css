@@ -269,6 +269,31 @@ span {
     }
 }
 
+@media(max-width: 465px){
+    .first_para, .second_para, .third_para{
+        width: 320px;
+        float: initial;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    .first_image, .second_image, .third_image,
+    .grey_box_one, .grey_box_two, .grey_box_three{
+        width: 300px; 
+        height: 300px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .containers{
+        width: 100%;
+    }
+}
+
 
 /*==============================================================================LOGIN AND REGISTRATION FILES========================================================================================================================*/
 .create_account_title, .login_title{
@@ -296,7 +321,7 @@ span {
     border: 1px solid black;
     padding: 0.7rem;
     margin-bottom: 10px;
-    width:400px;
+    width: 400px;
 }
 form input[type="submit"] {
     padding: 0.5em;
@@ -310,6 +335,52 @@ form input[type="submit"] {
 #reset_password {
     position:absolute;
     right: 100px;
+}
+
+@media screen and (max-width: 650px) {
+    .new_user{
+        width: 300px;
+    }
+    .newuser_input{
+        width: 250px;
+    }
+
+    .logininfo{
+        width: 400px;
+    }
+    .login_inputs{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .logininfo{
+        width: 300px;
+    }
+    .login_inputs{
+        width: 200px;
+    }
+    .login_links {
+        display: block;
+        position: static !important;
+        right: initial !important;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .logininfo{
+        width: 200px;
+    }
+    .login_inputs{
+        width: 170px;
+    }
+
+    .new_user{
+        width: 230px;
+    }
+    .newuser_input{
+        width: 180px;
+    }
 }
 
 
@@ -396,6 +467,15 @@ form input[type="submit"] {
 @media screen and (max-width: 730px){
     .list_container{
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .men img, .women img, .hoodie_unisex img, 
+    .regular_hats img, .bucket_hats img, 
+    .cases img, .masks img, .bags img{
+        object-fit: contain;
+        width: 300px;
     }
 }
 
@@ -498,6 +578,11 @@ label {
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
+
+.descTitle{
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1025px) {
     #item_description {
         width: 100%;
@@ -526,6 +611,16 @@ label {
         margin: 0px;
         height: auto;
     }
+    #description{
+        text-align: left;
+        width: 350px;
+    }
+    .descTitle{
+        text-align: center;
+        margin: auto;
+        width: 200px;
+        display: block;
+    }
 }
 @media screen and (max-width: 615px) {
     #description {
@@ -535,14 +630,24 @@ label {
         margin-top: 1rem;
     }
     #variant_images {
-        display:inline;
+        display: inline;
     }
 
     #item_description {
         margin-top: 1rem;
     }
+    #item_image{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 
+@media screen and (max-width: 450px){
+    #variant_images img{
+        width: 80px;
+        height: 80px;
+    }
 }
 
 
@@ -605,6 +710,40 @@ label {
     margin: 2rem;
     padding: 0.5rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1010px) {
+    #cart{
+        width: 402px;
+    }
+
+    .product_image{
+        float: initial;
+        display: block;
+        margin: auto;
+    }
+
+    .remove_button {
+        position: static;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .product_title{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #cart{
+        width: 300px;
+    }
+
+    .product_image{
+        width: 298px;
+        height: 298px;
+    }
+
 }
 
 /*=============================================================================================== CHECKOUT FILE ONLY=========================================================================================================================*/
@@ -670,6 +809,21 @@ label {
     padding: 2rem;
 }
 
+
+@media screen and (max-width: 650px) {
+    .textarea_container{
+        width: 300px;
+    }
+    .textarea{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 445px){
+    .textarea_container{
+        width: 250px;
+    }
+}
 
 /*-------------------------------------------------------------------------------------------FOOTER-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
