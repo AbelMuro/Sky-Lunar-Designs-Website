@@ -1,4 +1,13 @@
 import {v4 as uuid} from 'uuid';
+import images from './assets/*.jpg'
+
+
+//function for loading images dynamically
+export function getImages(name){
+    return images[name];
+
+}
+
 
 //================================================ NAVIGATION BAR FUNCTIONS =======================================================================================
 

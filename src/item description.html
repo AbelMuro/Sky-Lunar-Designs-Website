@@ -15,11 +15,13 @@
             import {
                 add_to_cart,
                 change_mockup,
-                NavigationBurger
+                NavigationBurger,
+                getImages
             } from './scripts.js'
             window.add_to_cart = add_to_cart;
             window.change_mockup = change_mockup;
             window.NavigationBurger = NavigationBurger;
+            window.getImages = getImages;
         </script>
         <link rel="stylesheet" href="styles.css"/>                                                                              <!-- External stylesheet-->
     </head>
@@ -52,7 +54,8 @@
                 for(let key in variant_array) {
                     let variant_option = $("<option>").html(variant_array[key]).attr("value", variant_array[key]);
                     $("#variant").append(variant_option);  
-                    let image_variant = $("<img>").attr("src", storedTitle.toLowerCase() + " " + variant_array[key] + ".jpg");
+                    console.log(storedTitle.toLowerCase() + " " + variant_array[key]);
+                    let image_variant = $("<img>").attr("src", getImages(storedTitle.toLowerCase() + " " + variant_array[key]));
                     let image_link = $("<a>").attr("onclick", "change_mockup($(this).find('img'))");
                     image_link.append(image_variant);
                     $("#variant_images").append(image_link);

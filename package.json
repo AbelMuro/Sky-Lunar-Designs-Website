@@ -14,9 +14,11 @@
     "staticPath": "./src/assets"
   },
   "dependencies": {
+    "@parcel/resolver-glob": "^2.7.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.7.0",
     "parcel": "^2.7.0",
     "parcel-reporter-static-files-copy": "^1.4.0"
   }
