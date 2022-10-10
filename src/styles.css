@@ -338,6 +338,7 @@ form input[type="submit"] {
 }
 
 @media screen and (max-width: 650px) {
+
     .new_user{
         width: 300px;
     }
@@ -779,6 +780,29 @@ label {
 .selection {
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 650px){
+    .fieldset_container{
+        width: 300px;
+    }
+}
+
+@media (max-width: 530px){
+    .fieldset_container{
+        width: 200px;
+    }
+
+    .fieldset_title{
+        font-size: 23px;
+    }
+
+    .inputs{
+        width: 100px;
+    }
+
+}
+
+
 /*=======================================================================================CONTACT US FILE======================================================================================================================================================*/
 
 .textarea_container {

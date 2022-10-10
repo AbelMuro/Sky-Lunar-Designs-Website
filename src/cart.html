@@ -14,10 +14,12 @@
         <script type="module">
             import {
                 remove_from_cart,
-                NavigationBurger
+                NavigationBurger,
+                getImages
             } from './scripts.js'
             window.remove_from_cart = remove_from_cart;
-            window.NavigationBurger = NavigationBurger;      
+            window.NavigationBurger = NavigationBurger;   
+            window.getImages = getImages;   
         </script>
         <link rel="stylesheet" href="styles.css"/>                                                                              <!-- External stylesheet-->
     </head>
@@ -39,7 +41,7 @@
                         let _size = $("<b>").html("SIZE: " + cart[item].item_size).attr("class", "product_size");
                         let _quantity = $("<b>").html("QUANTITY: " + cart[item].item_quantity).attr("class", "product_quantity");
                         let _color = $("<b>").html("VARIANT: " + cart[item].item_variant).attr("class", "product_color");
-                        let _image = $("<img>").attr("src", cart[item].item_image).attr("class", "product_image");
+                        let _image = $("<img>").attr("src", getImages(cart[item].item_image)).attr("class", "product_image");
                         let _title = $("<b>").html("TITLE: " + cart[item].item_title).attr("class", "product_title");
                         let _price = $("<b>").html("PRICE: $" + cart[item].item_price).attr("class", "product_price");                     //history.go(0) refreshes the page
                         let _button = $("<button>").html("Remove From Cart").attr("onclick", "remove_from_cart($('#" + cart[item].item_ID + "')), history.go(0)").attr("class", "remove_button");

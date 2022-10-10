@@ -5,7 +5,6 @@ import images from './assets/*.jpg'
 //function for loading images dynamically
 export function getImages(name){
     return images[name];
-
 }
 
 
@@ -77,7 +76,7 @@ export function add_to_cart(node) {
     let size = node.children("#user_choice").children("#size").val();
     let quantity = node.children("#user_choice").children("#quantity").val();
     let variant = node.children("#user_choice").children("#variant").val(); 
-    let image = title.toLowerCase() + " " + variant + ".jpg";
+    let image = title.toLowerCase() + " " + variant;
     let new_price = parseFloat(price);                                                  
     new_price *= parseFloat(quantity);
 
