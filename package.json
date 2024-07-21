@@ -18,6 +18,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@parcel/css": "^1.14.0",
     "@parcel/transformer-inline-string": "^2.7.0",
     "parcel": "^2.7.0",
     "parcel-reporter-static-files-copy": "^1.4.0"
