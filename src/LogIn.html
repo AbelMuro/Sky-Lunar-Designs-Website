@@ -15,7 +15,7 @@
 
         <script type="module">
             import {
-                NavigationBurger
+                NavigationBurger,
             } from './scripts.js';
             window.NavigationBurger = NavigationBurger;
         </script>
@@ -27,6 +27,10 @@
         <script>
             $(document).ready(function(){
                 NavigationBurger();
+                document.getElementById('login-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    console.log('hello world')
+                })
             })
         </script>
 
@@ -72,7 +76,7 @@
 
         <hr>
 
-        <form class="logininfo" autocomplete="on">
+        <form class="logininfo" id='login-form' autocomplete="on">
             <label class="login_labels" for="user"> Username: </label> 
             <input class="login_inputs" type="text" id="user" name="username" value="username" required><br>
             <label class="login_labels" for="pass"> Password: </label> 
