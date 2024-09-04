@@ -25,12 +25,29 @@
 
     <body>
         <script>
+            //need to send a request to the /Login endpoint
+            async function LogIn(formData) {
+                const response = await fetch('http://localhost:4000/Register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({email: formData.username, password: formData.password})
+                })
+
+                const data = await response.text();
+                console.log(data);
+                }
+
             $(document).ready(function(){
                 NavigationBurger();
                 document.getElementById('login-form').addEventListener('submit', (e) => {
                     e.preventDefault();
-                    console.log('hello world')
+                    const username = e.target.elements.username.value;
+                    const password = e.target.elements.password.value;
+                    LogIn({username, password});
                 })
+                
             })
         </script>
 
